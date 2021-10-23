@@ -20,6 +20,9 @@ set showcmd
 "行番号の表示
 set number
 
+"カーソルラインの表示
+set cursorline
+
 " ------------ ファイルタイプ
 " ファイルタイプを検出して、それに応じて構文ハイライト
 execute pathogen#infect()
