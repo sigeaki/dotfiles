@@ -1,0 +1,10 @@
+プラグインの無効化
+    pathogen#infect()する前に
+    let g:pathogen_disabled = ["プラグイン名"] 2つ以上のプラグインを無効化するなら、カンマ区切りで列挙
+プラグインを削除
+    cd ~/dotfiles
+    git submodule deinit .vim/bundle/{プラグイン名}
+    git rm .vim/bundle/{プラグイン名}
+    git commit -m "{任意のコミットコメント}"
+    rm -rf .git/modules/.vim/bundle/{プラグイン名}
+    git push
