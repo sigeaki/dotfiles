@@ -86,3 +86,6 @@ set noswapfile
 :iabbrev dd <C-R>=strftime("[%F](%a)")<CR><ESC>
 :iabbrev dt <C-R>=strftime("%F %H:%M")<CR>
 :iabbrev kt <C-R>=strftime("%H時%M分起床")<CR><ESC>
+
+" jedi-vimの補完開始
+let g:jedi#completions_command = "<C-n>"
