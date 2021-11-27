@@ -87,5 +87,7 @@ set noswapfile
 :iabbrev dt <C-R>=strftime("%F %H:%M")<CR>
 :iabbrev kt <C-R>=strftime("%H時%M分起床")<CR><ESC>
 
+" docstringは表示しない
+autocmd FileType python setlocal completeopt-=preview
 " jedi-vimの補完開始
 " let g:jedi#completions_command = "<C-n>"
