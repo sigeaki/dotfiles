@@ -87,6 +87,12 @@ set noswapfile
 :iabbrev dt <C-R>=strftime("%F %H:%M")<CR>
 :iabbrev kt <C-R>=strftime("%H時%M分起床")<CR><ESC>
 
+" ファイルをひらいたとき最後にカーソルがあった場所に移動する
+augroup vimrcEx
+  au BufRead * if line("'\"") > 0 && line("'\"") <= line("$") |
+  \ exe "normal g`\"" | endif
+augroup END
+
 " docstringは表示しない
 autocmd FileType python setlocal completeopt-=preview
 " jedi-vimの補完開始
