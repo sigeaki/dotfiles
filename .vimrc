@@ -93,7 +93,15 @@ augroup vimrcEx
   \ exe "normal g`\"" | endif
 augroup END
 
+" jedi-vimの設定
 " docstringは表示しない
 autocmd FileType python setlocal completeopt-=preview
-" jedi-vimの補完開始
-" let g:jedi#completions_command = "<C-n>"
+
+" quickrunの設定
+nnoremap <F10> :QuickRun python3<CR>
+let g:quickrun_config = get(g:, 'quickrun_config', {})
+let g:quickrun_config._ = {
+      \ 'outputter/buffer/opener': 'vnew',
+      \ 'outputter/buffer/into': 2,
+      \ 'outputter/buffer/close_on_empty': 1,
+      \ }
