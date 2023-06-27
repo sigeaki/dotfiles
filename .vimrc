@@ -88,6 +88,9 @@ nnoremap <Leader>m :MRU<CR>
 " クリップボードのペースト
 nnoremap <Leader>p "+p
 
+" ハイライトを消す
+nnoremap <C-l> :nohlsearch<CR><C-l>
+
 "日付けの挿入
 :iabbrev dd <C-R>=strftime("[%F](%a)")<CR><ESC>
 :iabbrev dt <C-R>=strftime("%F %H:%M")<CR>
