@@ -81,6 +81,12 @@ set noundofile
 set nobackup
 " Swapファイル(自動保存ファイル)を作らない
 set noswapfile
+"
+"ノーマルモードへの切替
+inoremap ;; <ESC>
+"
+"Dはレジスタを汚さない
+nnoremap D "_D
 
 " MRUの起動
 nnoremap <Leader>m :MRU<CR>
