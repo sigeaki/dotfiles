@@ -91,6 +91,9 @@ nnoremap D "_D
 " MRUの起動
 nnoremap <Leader>m :MRU<CR>
 
+" クリップボードへプット
+nnoremap <Leader>y "+y
+
 " クリップボードのペースト
 nnoremap <Leader>p "+p
 
