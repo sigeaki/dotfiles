@@ -88,6 +88,9 @@ inoremap ;; <ESC>
 "Dはレジスタを汚さない
 nnoremap D "_D
 
+"レジスタを汚さないdd
+nnoremap <Leader>dd "_dd
+
 " MRUの起動
 nnoremap <Leader>m :MRU<CR>
 
